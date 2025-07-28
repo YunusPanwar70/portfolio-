@@ -14,7 +14,7 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection, scrollToSection, menu
                 <div className="flex items-center justify-between">
                     <motion.div whileHover={{ scale: 1.05 }} className="text-2xl font-bold">
                         <span className="text-purple-500">{"<"}</span>
-                        <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Mohammad Yunus</span>
+                        <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">MY</span>
                         <span className="text-purple-500">{"/>"}</span>
                     </motion.div>
 

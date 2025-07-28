@@ -37,11 +37,11 @@ const About = ({ darkMode }) => {
                     >
                         <h3 className="text-2xl font-semibold mb-4">Who am I?</h3>
                         <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                            I'm a passionate Full-Stack Developer with {new Date().getFullYear() - 2015}+ years of experience in building web applications.
-                            I specialize in JavaScript technologies across the whole stack (React.js, Node.js, Express, MongoDB).
+                            I'm a passionate Full Stack Developer with 1 years of experience in building web applications.
+                            I specialize in JavaScript technologies.
                         </p>
                         <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                            My journey in web development started when I was in college and I've been in love with coding ever since.
+                            My journey in web development started when I was in 12th Class and I've been in love with coding ever since.
                             I enjoy turning complex problems into simple, beautiful and intuitive solutions.
                         </p>
                         <p className={`text-lg mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>

@@ -196,7 +196,7 @@ const Portfolio = () => {
                                 <motion.div variants={item}>
                                     <h2 className="text-2xl md:text-3xl font-semibold mb-6">
                                         <TypeAnimation sequence={[
-                                            'Full-Stack Developer',
+                                            'Full Stack Developer',
                                             1000,
                                             'Frontend Specialist',
                                             1000,
@@ -248,7 +248,7 @@ const Portfolio = () => {
                             <motion.div initial="hidden" whileInView="visible" variants={slideInFromRight} viewport={{ once: true }} className="md:w-2/3 md:pl-12"   >
                                 <h3 className="text-2xl font-semibold mb-4">Who am I?</h3>
                                 <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                                    I'm a passionate Full-Stack Developer with {new Date().getFullYear() - 2015}+ years of experience in building web applications.
+                                    I'm a passionate Full Stack Developer with {new Date().getFullYear() - 2015}+ years of experience in building web applications.
                                     I specialize in JavaScript technologies across the whole stack (React.js, Node.js, Express, MongoDB).
                                 </p>
                                 <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
@@ -363,14 +363,14 @@ const Portfolio = () => {
                                             side: "right"
                                         },
                                         {
-                                            title: "Full-Stack Developer",
+                                            title: "Full Stack Developer",
                                             company: "FeliTech Solutions",
                                             period: "2018 - 2021",
                                             description: "Developed a free and open-source resume builder focused on user privacy and customization.",
                                             side: "left"
                                         },
                                         {
-                                            title: "Full-Stack Developer",
+                                            title: "Full Stack Developer",
                                             company: "FeliTech Solutions",
                                             period: "2016 - 2018",
                                             description: "Designed and developed a responsive UI and user-friendly event management interface using React.",

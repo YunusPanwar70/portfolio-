@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { FiExternalLink } from 'react-icons/fi';
 import ProjectCard from '../common/ProjectCard';
 import DecoreSystem from "../assets/decor.png";
+import ChatApp from "../assets/chat-app.png";
+import portfolio from '../assets/portfolio.png';
 
 const Projects = ({ darkMode, scrollToSection }) => {
     const projects = [
@@ -18,7 +20,7 @@ const Projects = ({ darkMode, scrollToSection }) => {
             technologies: ["React", "Node", "Express", "Tailwind"],
             link: "#",
             github: "#",
-            image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            image: ChatApp
         },
         {
             title: "Streamify",
@@ -29,7 +31,7 @@ const Projects = ({ darkMode, scrollToSection }) => {
             image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
         },
         {
-            title: "Function Generator Tool",
+            title: "Food Recipes",
             description: "Application to search recipes by ingredients with nutritional information.",
             technologies: ["HTML5", "CSS5", "JavaScript"],
             link: "#",
@@ -42,7 +44,7 @@ const Projects = ({ darkMode, scrollToSection }) => {
             technologies: ["Gatsby", "GraphQL", "Netlify CMS"],
             link: "#",
             github: "#",
-            image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            image: portfolio
         },
         {
             title: "Weather Forecast App",
@@ -63,8 +65,7 @@ const Projects = ({ darkMode, scrollToSection }) => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
                     className="text-3xl font-bold mb-12 text-center"
-                >
-                    My <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Projects</span>
+                >My<span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Projects</span>
                 </motion.h2>
 
                 <motion.div
@@ -82,7 +83,7 @@ const Projects = ({ darkMode, scrollToSection }) => {
                     ))}
                 </motion.div>
 
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -96,10 +97,9 @@ const Projects = ({ darkMode, scrollToSection }) => {
                     >
                         View All Projects
                     </motion.button>
-                </motion.div>
+                </motion.div> */}
             </div>
         </section>
     );
 };
-
 export default Projects;

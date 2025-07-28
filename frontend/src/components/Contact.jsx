@@ -98,30 +98,26 @@ const Contact = ({ darkMode }) => {
                             <div className="flex space-x-4">
                                 <motion.a
                                     whileHover={{ y: -5, scale: 1.1 }}
-                                    href="#"
+                                    whileTap={{ scale: 0.95 }}
+                                    href="https://github.com/YunusPanwar70"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className={`p-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg hover:from-purple-600 hover:to-pink-600 transition duration-300`}
+                                    className={`p-3 rounded-full bg-gradient-to-r from-gray-700 to-gray-900 text-white shadow-lg hover:from-gray-800 hover:to-black transition duration-300`}
+                                    aria-label="GitHub"
                                 >
                                     <FaGithub className="text-xl" />
                                 </motion.a>
+
                                 <motion.a
                                     whileHover={{ y: -5, scale: 1.1 }}
-                                    href="#"
+                                    whileTap={{ scale: 0.95 }}
+                                    href="https://linkedin.com/in/-yunus"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`p-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg hover:from-blue-600 hover:to-blue-700 transition duration-300`}
+                                    aria-label="LinkedIn"
                                 >
                                     <FaLinkedin className="text-xl" />
-                                </motion.a>
-                                <motion.a
-                                    whileHover={{ y: -5, scale: 1.1 }}
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={`p-3 rounded-full bg-gradient-to-r from-sky-400 to-sky-500 text-white shadow-lg hover:from-sky-500 hover:to-sky-600 transition duration-300`}
-                                >
-                                    <FaTwitter className="text-xl" />
                                 </motion.a>
                             </div>
                         </div>

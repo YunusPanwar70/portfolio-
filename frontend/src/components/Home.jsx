@@ -25,6 +25,8 @@ const Home = ({ darkMode, scrollToSection }) => {
                                         1000,
                                         'Backend Developer',
                                         1000,
+                                        'MERN Developer',
+                                        1000,
                                     ]}
                                     wrapper="span"
                                     speed={50}
