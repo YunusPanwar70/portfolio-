@@ -418,7 +418,7 @@ const Portfolio = () => {
                                 {
                                     title: "Chat App",
                                     description: "Collaborative task management application with real-time updates and team features.",
-                                    technologies: ["React", "Node.js", "Tailwind"],
+                                    technologies: ["React", "Node", "Express", "Tailwind"],
                                     link: "#",
                                     github: "#",
                                     image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
@@ -575,6 +575,14 @@ const Portfolio = () => {
                                     <div className="mb-6">
                                         <label htmlFor="email" className="block font-medium mb-2">Your Email</label>
                                         <input type="email" id="email" className={`w-full px-4 py-3 rounded-lg border ${darkMode ? 'bg-gray-700 border-gray-600 focus:border-purple-500' : 'bg-white border-gray-300 focus:border-purple-500'} focus:ring-2 focus:ring-purple-200 transition duration-300`} placeholder="john@example.com" {...register("email", { required: "email is required." })} />
+                                        {errors && errors.email && (
+                                            <div>{errors?.email?.message}</div>
+                                        )}
+                                    </div>
+
+                                    <div className="mb-6">
+                                        <label htmlFor="email" className="block font-medium mb-2">Your Phone No</label>
+                                        <input type="text" id="phone" className={`w-full px-4 py-3 rounded-lg border ${darkMode ? 'bg-gray-700 border-gray-600 focus:border-purple-500' : 'bg-white border-gray-300 focus:border-purple-500'} focus:ring-2 focus:ring-purple-200 transition duration-300`} placeholder="+91 1234567890" {...register("email", { required: "email is required." })} />
                                         {errors && errors.email && (
                                             <div>{errors?.email?.message}</div>
                                         )}
