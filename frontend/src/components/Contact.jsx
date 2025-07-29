@@ -26,7 +26,6 @@ const Contact = ({ darkMode }) => {
             toast.error("An error occurred while submitting the data.");
         }
     };
-
     return (
         <section id="contact" className="min-h-screen py-20 flex items-center">
             <div className="w-full">

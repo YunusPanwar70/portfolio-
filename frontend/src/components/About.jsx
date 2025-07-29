@@ -1,9 +1,19 @@
 import { motion } from 'framer-motion';
+import resume from "../assets/Mohammad_Yunus.pdf";
 
 const About = ({ darkMode }) => {
+    const handleDownloadResume = () => {
+        const link = document.createElement('a');
+        link.href = resume;
+        link.download = 'Mohammad_Yunus_Resume.pdf'; // The filename for download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <section id="about" className="min-h-screen py-20 flex items-center">
-            <div className="w-full">
+            <div className="container mx-auto px-4">
                 <motion.h2
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +62,7 @@ const About = ({ darkMode }) => {
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
-                            className="flex flex-wrap gap-4"
+                            className="flex flex-wrap gap-4 mb-6"
                         >
                             <motion.div
                                 whileHover={{ y: -5 }}
@@ -73,6 +83,17 @@ const About = ({ darkMode }) => {
                                 <span className="font-medium">Experience:</span> 1 year
                             </motion.div>
                         </motion.div>
+
+                        <motion.button
+                            onClick={handleDownloadResume}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className={`px-6 py-3 rounded-lg font-medium shadow-lg transition-all ${darkMode ?
+                                'bg-gradient-to-r from-purple-600 to-pink-600 text-white' :
+                                'bg-gradient-to-r from-purple-500 to-pink-500 text-white'}`}
+                        >
+                            Download Resume
+                        </motion.button>
                     </motion.div>
                 </div>
             </div>
