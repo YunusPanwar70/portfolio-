@@ -1,7 +1,18 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
+import yunus from '../assets/yunusimg.jpg';
 
-const Home = ({ darkMode, scrollToSection }) => {
+const Home = ({ darkMode }) => {
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
     return (
         <section id="home" className="min-h-screen flex items-center">
             <div className="w-full">
@@ -68,7 +79,11 @@ const Home = ({ darkMode, scrollToSection }) => {
                     >
                         <div className={`relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 ${darkMode ? 'border-purple-500' : 'border-purple-300'} shadow-xl`}>
                             <div className="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
-                                <span className="text-6xl">👨‍💻</span>
+                                <img
+                                    src={yunus}
+                                    alt="Mohammad Yunus"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                             <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-pink-400/20 blur-xl"></div>
                             <div className="absolute -top-6 -left-6 w-32 h-32 rounded-full bg-purple-400/20 blur-xl"></div>

@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import resume from "../assets/Mohammad_Yunus.pdf";
+import yunus from '../assets/yunusimg.jpg';
 
 const About = ({ darkMode }) => {
     const handleDownloadResume = () => {
         const link = document.createElement('a');
         link.href = resume;
-        link.download = 'Mohammad_Yunus_Resume.pdf'; // The filename for download
+        link.download = 'Mohammad_Yunus_Resume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -33,7 +34,11 @@ const About = ({ darkMode }) => {
                     >
                         <div className={`relative w-64 h-64 rounded-lg overflow-hidden border-2 ${darkMode ? 'border-purple-500' : 'border-purple-300'} shadow-lg`}>
                             <div className="w-full h-full bg-gradient-to-br from-purple-300 to-pink-300 flex items-center justify-center">
-                                <span className="text-6xl">🧑‍💻</span>
+                                <img
+                                    src={yunus}
+                                    alt="Mohammad Yunus"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                             <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-pink-400/20 blur-xl"></div>
                         </div>
@@ -66,19 +71,19 @@ const About = ({ darkMode }) => {
                         >
                             <motion.div
                                 whileHover={{ y: -5 }}
-                                className={`px-4 py-2 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-purple-100'} shadow-md`}
+                                className={`px-4 py-2 rounded-lg ${darkMode ? 'bg-gray-800 text-gray-100' : 'bg-purple-100 text-gray-800'} shadow-md`}
                             >
                                 <span className="font-medium">Location:</span> Jodhpur Rajasthan
                             </motion.div>
                             <motion.div
                                 whileHover={{ y: -5 }}
-                                className={`px-4 py-2 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-pink-100'} shadow-md`}
+                                className={`px-4 py-2 rounded-lg ${darkMode ? 'bg-gray-800 text-gray-100' : 'bg-pink-100 text-gray-800'} shadow-md`}
                             >
                                 <span className="font-medium">Education:</span> Bachelor of Computer Applications
                             </motion.div>
                             <motion.div
                                 whileHover={{ y: -5 }}
-                                className={`px-4 py-2 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-purple-100'} shadow-md`}
+                                className={`px-4 py-2 rounded-lg ${darkMode ? 'bg-gray-800 text-gray-100' : 'bg-purple-100 text-gray-800'} shadow-md`}
                             >
                                 <span className="font-medium">Experience:</span> 1 year
                             </motion.div>

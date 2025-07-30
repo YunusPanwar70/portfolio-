@@ -1,6 +1,6 @@
 import express from 'express';
-import { submitcontactform } from '../controller/contact.controller.js';
+import { contact } from '../controller/auth.controller.js';
 
 const router = express.Router();
-router.post('/contact', submitcontactform);
+router.post('/contact', contact);
 export default router;

@@ -1,27 +1,28 @@
-import mongoose, { mongo } from 'mongoose';
+// import mongoose, { mongo } from 'mongoose';
 
-const msgSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    email: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    phoneNo: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    msg: {
-        type: String,
-        required: true,
-        trim: true
-    }
-}, { timestamps: true });
+// const msgSchema = new mongoose.Schema({
 
-const Message = mongoose.model('Message', msgSchema);
-export default Message;
+//     name: {
+//         type: String,
+//         required: true,
+//         trim: true
+//     },
+//     email: {
+//         type: String,
+//         required: true,
+//         trim: true
+//     },
+//     phoneNo: {
+//         type: String,
+//         required: true,
+//         trim: true
+//     },
+//     msg: {
+//         type: String,
+//         required: true,
+//         trim: true
+//     }
+// }, { timestamps: true });
+
+// const Message = mongoose.model('Message', msgSchema);
+// export default Message;

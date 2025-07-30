@@ -1,6 +1,6 @@
-import express from 'express';
-import { getMesg } from '../controller/msg.controller.js';
+// import express from 'express';
+// import { getMesg } from '../controller/msg.controller.js';
 
-const router = express.Router();
-router.post('/send', getMesg);
-export default router;
+// const router = express.Router();
+// router.post('/send', getMesg);
+// export default router;
