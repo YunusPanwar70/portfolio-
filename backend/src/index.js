@@ -10,16 +10,19 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: 'https://portfolio-henna-pi-47.vercel.app/', // Replace with your frontend URL
+    origin: 'https://portfolio-henna-pi-47.vercel.app', 
     credentials: true
 }));
 app.use(express.json());
 
 // Routes
 app.use('/api', authRoutes);
-app.use('/', (req, res) => {
-    return { msg: 'ok' };
+
+// Health check or base route
+app.get('/', (req, res) => {
+    res.json({ message: "ok", status: true });
 });
+
 app.listen(PORT, () => {
     console.log(`Server Running on ${PORT}`);
     connectDB();
