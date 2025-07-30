@@ -17,7 +17,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api', authRoutes);
-app.get('/', (req, res) => {
+app.use('/', (req, res) => {
     return res.status(200).json('working');
 });
 app.listen(PORT, () => {
