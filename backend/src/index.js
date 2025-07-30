@@ -17,7 +17,9 @@ app.use(express.json());
 
 // Routes
 app.use('/api', authRoutes);
-
+app.get('/', (req, res) => {
+    return res.status(200).json('working');
+});
 app.listen(PORT, () => {
     console.log(`Server Running on ${PORT}`);
     connectDB();
