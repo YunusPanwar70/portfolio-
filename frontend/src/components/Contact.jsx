@@ -14,7 +14,7 @@ const Contact = ({ darkMode }) => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await axios.post('http://localhost:3000/api/contact', data);
+            const response = await axios.post('https://portfolio-7gop.vercel.app/api/contact', data);
 
             if (response.status === 201) {
                 toast.success("Message sent successfully!");

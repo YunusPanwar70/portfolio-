@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Replace with your frontend URL
+    origin: 'https://portfolio-henna-pi-47.vercel.app/', // Replace with your frontend URL
     credentials: true
 }));
 app.use(express.json());
