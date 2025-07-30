@@ -1,5 +1,12 @@
-import mongoose from 'mongoose';
-const userSchema = new mongoose.Schema({
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+var _mongoose = _interopRequireDefault(require("mongoose"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
+var userSchema = new _mongoose["default"].Schema({
   name: {
     type: String,
     required: true
@@ -23,5 +30,5 @@ const userSchema = new mongoose.Schema({
 }, {
   timestamps: true
 });
-const User = mongoose.model('User', userSchema);
-export default User;
+var User = _mongoose["default"].model('User', userSchema);
+var _default = exports["default"] = User;

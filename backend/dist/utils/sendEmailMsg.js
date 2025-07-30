@@ -53,3 +53,4 @@
 //         console.error('Error notifying admin about message:', error.message);
 //     }
 // };
+"use strict";

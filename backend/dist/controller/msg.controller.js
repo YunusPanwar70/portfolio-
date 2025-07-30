@@ -21,3 +21,4 @@
 //         res.status(500).json({ msg: 'Message server error' });
 //     }
 // };
+"use strict";

@@ -26,3 +26,4 @@
 
 // const Message = mongoose.model('Message', msgSchema);
 // export default Message;
+"use strict";

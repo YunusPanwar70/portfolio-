@@ -4,3 +4,4 @@
 // const router = express.Router();
 // router.post('/send', getMesg);
 // export default router;
+"use strict";
